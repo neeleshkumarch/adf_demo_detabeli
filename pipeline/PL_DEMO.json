@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "Read_Customer_Table",
-				"description": "reading customer table",
+				"description": "reading customer table and it isn't uodatinf",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
