@@ -22,6 +22,9 @@
 		},
 		"TGR_EVENT_SIMPLE_properties_typeProperties_scope": {
 			"value": "/subscriptions/adaafb06-c221-41c0-ada0-274d5b27cb15/resourceGroups/test/providers/Microsoft.Storage/storageAccounts/demodetabeli1adls"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://demo-databeli1.vault.azure.net/"
 		}
 	}
 }

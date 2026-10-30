@@ -31,6 +31,10 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/adaafb06-c221-41c0-ada0-274d5b27cb15/resourceGroups/test/providers/Microsoft.Storage/storageAccounts/demodetabeli1adls"
 		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://demo-databeli1.vault.azure.net/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -72,6 +76,9 @@
 					},
 					"LS_SQL_SERVER_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SQL_SERVER_properties_typeProperties_userName')]"
+					},
+					"AzureKeyVault1_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
 					},
 					"TGR_EVENT_SIMPLE_properties_typeProperties_scope": {
 						"value": "[parameters('TGR_EVENT_SIMPLE_properties_typeProperties_scope')]"

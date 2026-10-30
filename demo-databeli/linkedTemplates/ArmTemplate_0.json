@@ -27,6 +27,10 @@
 			"type": "string",
 			"defaultValue": "databeli1"
 		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://demo-databeli1.vault.azure.net/"
+		},
 		"TGR_EVENT_SIMPLE_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/adaafb06-c221-41c0-ada0-274d5b27cb15/resourceGroups/test/providers/Microsoft.Storage/storageAccounts/demodetabeli1adls"
@@ -333,6 +337,19 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/AzureKeyVault1')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureKeyVault",
+				"typeProperties": {
+					"baseUrl": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/DS_ADLS_CSV_DEMO')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -608,6 +625,7 @@
 				"activities": [
 					{
 						"name": "Read_Customer_Table",
+						"description": "reading customer table and it isn't updating",
 						"type": "Lookup",
 						"dependsOn": [],
 						"policy": {
