@@ -1,0 +1,17 @@
+{
+	"name": "LS_SQL_SERVER",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "demo-databeli-1.database.windows.net",
+			"database": "demo-sqldb-databeli",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "databeli1",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEVEQjA2MEZDLUVFQTYtNEIyMS05NjU5LTcwNERFM0VGNDgwM19lZjY1ODQ4NS02NTc0LTQ1Y2ItOWI3My1kMWY0NzI5ODVjMDMiDQp9"
+		}
+	}
+}

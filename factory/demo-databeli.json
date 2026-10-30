@@ -1,0 +1,21 @@
+{
+	"name": "demo-databeli",
+	"properties": {
+		"globalParameters": {
+			"email_recipient": {
+				"type": "string",
+				"value": "neeleshkumarch@gmail.com"
+			}
+		},
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b58c3a12-6df3-47ef-bfe0-20d83fb7b76a",
+		"tenantId": "5741d1a4-b8e1-4f34-9819-caaacd41bb7e"
+	}
+}
