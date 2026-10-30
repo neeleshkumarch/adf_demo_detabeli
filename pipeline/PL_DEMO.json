@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "Read_Customer_Table",
+				"description": "reading customer table and it isn't updating",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
